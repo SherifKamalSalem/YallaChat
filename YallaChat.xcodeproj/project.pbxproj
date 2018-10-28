@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4233EECE21858C90001B509D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EECD21858C90001B509D /* ChatVC.swift */; };
+		4233EED021858CBB001B509D /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EECF21858CBB001B509D /* ChannelVC.swift */; };
+		4233EED22185936E001B509D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED12185936E001B509D /* GradientView.swift */; };
 		42A4D1232184FECF008C33A7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A4D1212184FECE008C33A7 /* SWRevealViewController.m */; };
 		42F8D2C02184F79200EB0EA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D2BF2184F79200EB0EA6 /* AppDelegate.swift */; };
-		42F8D2C22184F79200EB0EA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D2C12184F79200EB0EA6 /* ViewController.swift */; };
 		42F8D2C52184F79200EB0EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F8D2C32184F79200EB0EA6 /* Main.storyboard */; };
 		42F8D2C72184F79400EB0EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42F8D2C62184F79400EB0EA6 /* Assets.xcassets */; };
 		42F8D2CA2184F79400EB0EA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F8D2C82184F79400EB0EA6 /* LaunchScreen.storyboard */; };
@@ -18,12 +20,14 @@
 
 /* Begin PBXFileReference section */
 		1E6BBDA08AA33072AD766794 /* Pods-YallaChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YallaChat/Pods-YallaChat.debug.xcconfig"; sourceTree = "<group>"; };
+		4233EECD21858C90001B509D /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		4233EECF21858CBB001B509D /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		4233EED12185936E001B509D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		42A4D1202184FECE008C33A7 /* YallaChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YallaChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		42A4D1212184FECE008C33A7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		42A4D1222184FECF008C33A7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		42F8D2BC2184F79200EB0EA6 /* YallaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YallaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F8D2BF2184F79200EB0EA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		42F8D2C12184F79200EB0EA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42F8D2C42184F79200EB0EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42F8D2C62184F79400EB0EA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42F8D2C92184F79400EB0EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,30 @@
 				4E444AA87D64EA2CA0A37D11 /* Pods-YallaChat.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4233EECA21858C4A001B509D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4233EECD21858C90001B509D /* ChatVC.swift */,
+				4233EECF21858CBB001B509D /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4233EECB21858C53001B509D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4233EED12185936E001B509D /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4233EECC21858C5C001B509D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		42A4D11F2184FE88008C33A7 /* Supporting Files */ = {
@@ -87,8 +115,10 @@
 		42F8D2BE2184F79200EB0EA6 /* YallaChat */ = {
 			isa = PBXGroup;
 			children = (
+				4233EECC21858C5C001B509D /* Model */,
+				4233EECB21858C53001B509D /* View */,
+				4233EECA21858C4A001B509D /* Controller */,
 				42A4D11F2184FE88008C33A7 /* Supporting Files */,
-				42F8D2C12184F79200EB0EA6 /* ViewController.swift */,
 				42F8D2C32184F79200EB0EA6 /* Main.storyboard */,
 				42F8D2CB2184F79400EB0EA6 /* Info.plist */,
 			);
@@ -230,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42F8D2C22184F79200EB0EA6 /* ViewController.swift in Sources */,
+				4233EED021858CBB001B509D /* ChannelVC.swift in Sources */,
+				4233EECE21858C90001B509D /* ChatVC.swift in Sources */,
+				4233EED22185936E001B509D /* GradientView.swift in Sources */,
 				42F8D2C02184F79200EB0EA6 /* AppDelegate.swift in Sources */,
 				42A4D1232184FECF008C33A7 /* SWRevealViewController.m in Sources */,
 			);
