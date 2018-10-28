@@ -10,6 +10,9 @@
 		4233EECE21858C90001B509D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EECD21858C90001B509D /* ChatVC.swift */; };
 		4233EED021858CBB001B509D /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EECF21858CBB001B509D /* ChannelVC.swift */; };
 		4233EED22185936E001B509D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED12185936E001B509D /* GradientView.swift */; };
+		4233EED52185A358001B509D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED42185A358001B509D /* Constants.swift */; };
+		4233EED72185AB36001B509D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED62185AB36001B509D /* LoginVC.swift */; };
+		4233EED92185AD31001B509D /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED82185AD31001B509D /* CreateAccountVC.swift */; };
 		42A4D1232184FECF008C33A7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A4D1212184FECE008C33A7 /* SWRevealViewController.m */; };
 		42F8D2C02184F79200EB0EA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D2BF2184F79200EB0EA6 /* AppDelegate.swift */; };
 		42F8D2C52184F79200EB0EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F8D2C32184F79200EB0EA6 /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		4233EECD21858C90001B509D /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		4233EECF21858CBB001B509D /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		4233EED12185936E001B509D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4233EED42185A358001B509D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4233EED62185AB36001B509D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4233EED82185AD31001B509D /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		42A4D1202184FECE008C33A7 /* YallaChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YallaChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		42A4D1212184FECE008C33A7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		42A4D1222184FECF008C33A7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 			children = (
 				4233EECD21858C90001B509D /* ChatVC.swift */,
 				4233EECF21858CBB001B509D /* ChannelVC.swift */,
+				4233EED82185AD31001B509D /* CreateAccountVC.swift */,
+				4233EED62185AB36001B509D /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -79,6 +87,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4233EED32185A336001B509D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4233EED42185A358001B509D /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		42A4D11F2184FE88008C33A7 /* Supporting Files */ = {
@@ -115,6 +131,7 @@
 		42F8D2BE2184F79200EB0EA6 /* YallaChat */ = {
 			isa = PBXGroup;
 			children = (
+				4233EED32185A336001B509D /* Utilities */,
 				4233EECC21858C5C001B509D /* Model */,
 				4233EECB21858C53001B509D /* View */,
 				4233EECA21858C4A001B509D /* Controller */,
@@ -262,9 +279,12 @@
 			files = (
 				4233EED021858CBB001B509D /* ChannelVC.swift in Sources */,
 				4233EECE21858C90001B509D /* ChatVC.swift in Sources */,
+				4233EED92185AD31001B509D /* CreateAccountVC.swift in Sources */,
 				4233EED22185936E001B509D /* GradientView.swift in Sources */,
 				42F8D2C02184F79200EB0EA6 /* AppDelegate.swift in Sources */,
 				42A4D1232184FECF008C33A7 /* SWRevealViewController.m in Sources */,
+				4233EED52185A358001B509D /* Constants.swift in Sources */,
+				4233EED72185AB36001B509D /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
