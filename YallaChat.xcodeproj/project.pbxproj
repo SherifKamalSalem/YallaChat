@@ -14,6 +14,7 @@
 		4233EED72185AB36001B509D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED62185AB36001B509D /* LoginVC.swift */; };
 		4233EED92185AD31001B509D /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED82185AD31001B509D /* CreateAccountVC.swift */; };
 		4269D73F2187523F00A17375 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269D73E2187523F00A17375 /* RoundedButton.swift */; };
+		4269D7412187641F00A17375 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269D7402187641F00A17375 /* UserDataService.swift */; };
 		4285E9F62186FE7500F38932 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285E9F52186FE7500F38932 /* AuthService.swift */; };
 		42A4D1232184FECF008C33A7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A4D1212184FECE008C33A7 /* SWRevealViewController.m */; };
 		42F8D2C02184F79200EB0EA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D2BF2184F79200EB0EA6 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 		4233EED62185AB36001B509D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4233EED82185AD31001B509D /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		4269D73E2187523F00A17375 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		4269D7402187641F00A17375 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		4285E9F52186FE7500F38932 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		42A4D1202184FECE008C33A7 /* YallaChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YallaChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		42A4D1212184FECE008C33A7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				4285E9F52186FE7500F38932 /* AuthService.swift */,
+				4269D7402187641F00A17375 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				4233EED021858CBB001B509D /* ChannelVC.swift in Sources */,
 				4269D73F2187523F00A17375 /* RoundedButton.swift in Sources */,
 				4233EECE21858C90001B509D /* ChatVC.swift in Sources */,
+				4269D7412187641F00A17375 /* UserDataService.swift in Sources */,
 				4233EED92185AD31001B509D /* CreateAccountVC.swift in Sources */,
 				4285E9F62186FE7500F38932 /* AuthService.swift in Sources */,
 				4233EED22185936E001B509D /* GradientView.swift in Sources */,
