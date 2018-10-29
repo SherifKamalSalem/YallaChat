@@ -272,7 +272,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dHf-Q0-NUV">
                                 <rect key="frame" x="44" y="452" width="287" height="90"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qma-vN-iZk">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qma-vN-iZk" customClass="RoundedButton" customModule="YallaChat" customModuleProvider="target">
                                         <rect key="frame" x="18.5" y="0.0" width="250" height="50"/>
                                         <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -283,6 +283,11 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginBtnPressed:" destination="MrR-47-yvg" eventType="touchUpInside" id="QZb-9L-9f7"/>
                                         </connections>
@@ -346,7 +351,7 @@
                                 <color key="textColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkU-Wd-dhB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkU-Wd-dhB" customClass="RoundedButton" customModule="YallaChat" customModuleProvider="target">
                                 <rect key="frame" x="62" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -356,7 +361,13 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="createAccountPressed:" destination="dvb-6K-Nle" eventType="touchUpInside" id="Sbf-MK-qmk"/>
                                     <action selector="loginBtnPressed:" destination="MrR-47-yvg" eventType="touchUpInside" id="cFc-4e-t6n"/>
                                 </connections>
                             </button>
@@ -377,6 +388,9 @@
                                 <state key="normal" title="Choose Avatar">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickAvatarPressed:" destination="dvb-6K-Nle" eventType="touchUpInside" id="C80-yD-fcq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muu-c9-eVF">
                                 <rect key="frame" x="79" y="493" width="217" height="36"/>
@@ -384,6 +398,9 @@
                                 <state key="normal" title="Generate background color">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="pickBGColorPressed:" destination="dvb-6K-Nle" eventType="touchUpInside" id="N0k-yc-TYR"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NQ6-zg-KOm">
                                 <rect key="frame" x="62.5" y="164" width="250" height="153"/>
@@ -468,6 +485,10 @@
                         <viewLayoutGuide key="safeArea" id="IHG-JT-PfM"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="7dA-Mz-kd1" id="CBK-H2-rBD"/>
+                        <outlet property="passwordTxt" destination="ZMm-gR-TVw" id="Jfo-1V-V05"/>
+                        <outlet property="userImg" destination="9xh-PE-SVh" id="Sge-PH-sVd"/>
+                        <outlet property="usernameTxt" destination="mlB-Yf-Jql" id="b2z-yG-qe8"/>
                         <segue destination="iWP-3G-0Mo" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="Bd2-3n-LgM"/>
                     </connections>
                 </viewController>
