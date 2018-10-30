@@ -160,7 +160,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NHw-bQ-xu4">
                                         <rect key="frame" x="0.0" y="532" width="159" height="75"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XgG-rw-wQz">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menuProfileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="XgG-rw-wQz" customClass="CircularImage" customModule="YallaChat" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="75" id="LdH-0L-vuS"/>
@@ -193,6 +193,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="L1W-Wb-Uot" id="5nS-00-0Qo"/>
+                        <outlet property="userImg" destination="XgG-rw-wQz" id="Qs7-kL-sZh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bX-2X-WEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -320,6 +321,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LRK-or-Aac"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="FIq-8Z-ZK1" id="lAT-KL-Whw"/>
+                        <outlet property="passwordTxt" destination="fdd-d9-3k4" id="2bW-5N-e6B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JzT-xo-o5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -371,7 +376,7 @@
                                     <action selector="loginBtnPressed:" destination="MrR-47-yvg" eventType="touchUpInside" id="cFc-4e-t6n"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="9xh-PE-SVh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="9xh-PE-SVh" customClass="CircularImage" customModule="YallaChat" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="359" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="41i-nv-RGn"/>

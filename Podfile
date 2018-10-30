@@ -10,5 +10,5 @@ target 'YallaChat' do
 pod 'Alamofire'
 pod 'SwiftyJSON'
 pod 'Socket.IO-Client-Swift'
-
+pod 'ALThreeCircleSpinner'
 end

@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4205558121883EB700487811 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205558021883EB700487811 /* MessageService.swift */; };
+		4205558321883F0800487811 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4205558221883F0800487811 /* Channel.swift */; };
 		4233EECE21858C90001B509D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EECD21858C90001B509D /* ChatVC.swift */; };
 		4233EED021858CBB001B509D /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EECF21858CBB001B509D /* ChannelVC.swift */; };
 		4233EED22185936E001B509D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED12185936E001B509D /* GradientView.swift */; };
 		4233EED52185A358001B509D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED42185A358001B509D /* Constants.swift */; };
 		4233EED72185AB36001B509D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED62185AB36001B509D /* LoginVC.swift */; };
 		4233EED92185AD31001B509D /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4233EED82185AD31001B509D /* CreateAccountVC.swift */; };
+		42699FC02188555A002CB985 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42699FBE2188555A002CB985 /* ProfileVC.swift */; };
+		42699FC12188555A002CB985 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42699FBF2188555A002CB985 /* ProfileVC.xib */; };
+		42699FC421885D8B002CB985 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42699FC321885D8B002CB985 /* ProfileView.swift */; };
 		4269D73F2187523F00A17375 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269D73E2187523F00A17375 /* RoundedButton.swift */; };
 		4269D7412187641F00A17375 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269D7402187641F00A17375 /* UserDataService.swift */; };
 		4269D74321877FCA00A17375 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269D74221877FCA00A17375 /* AvatarPickerVC.swift */; };
 		4269D7452187827800A17375 /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269D7442187827800A17375 /* AvatarCollectionViewCell.swift */; };
+		4269D7472187936E00A17375 /* CircularImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4269D7462187936E00A17375 /* CircularImage.swift */; };
 		4285E9F62186FE7500F38932 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4285E9F52186FE7500F38932 /* AuthService.swift */; };
 		42A4D1232184FECF008C33A7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A4D1212184FECE008C33A7 /* SWRevealViewController.m */; };
 		42F8D2C02184F79200EB0EA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D2BF2184F79200EB0EA6 /* AppDelegate.swift */; };
@@ -28,16 +34,22 @@
 
 /* Begin PBXFileReference section */
 		1E6BBDA08AA33072AD766794 /* Pods-YallaChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YallaChat/Pods-YallaChat.debug.xcconfig"; sourceTree = "<group>"; };
+		4205558021883EB700487811 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		4205558221883F0800487811 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		4233EECD21858C90001B509D /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		4233EECF21858CBB001B509D /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		4233EED12185936E001B509D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4233EED42185A358001B509D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4233EED62185AB36001B509D /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		4233EED82185AD31001B509D /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		42699FBE2188555A002CB985 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		42699FBF2188555A002CB985 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		42699FC321885D8B002CB985 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4269D73E2187523F00A17375 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		4269D7402187641F00A17375 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		4269D74221877FCA00A17375 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		4269D7442187827800A17375 /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
+		4269D7462187936E00A17375 /* CircularImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImage.swift; sourceTree = "<group>"; };
 		4285E9F52186FE7500F38932 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		42A4D1202184FECE008C33A7 /* YallaChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YallaChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		42A4D1212184FECE008C33A7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -81,6 +93,7 @@
 				4233EECF21858CBB001B509D /* ChannelVC.swift */,
 				4233EED82185AD31001B509D /* CreateAccountVC.swift */,
 				4233EED62185AB36001B509D /* LoginVC.swift */,
+				42699FBE2188555A002CB985 /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,6 +104,8 @@
 				4233EED12185936E001B509D /* GradientView.swift */,
 				4269D73E2187523F00A17375 /* RoundedButton.swift */,
 				4269D7442187827800A17375 /* AvatarCollectionViewCell.swift */,
+				4269D7462187936E00A17375 /* CircularImage.swift */,
+				42699FC321885D8B002CB985 /* ProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,6 +113,7 @@
 		4233EECC21858C5C001B509D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4205558221883F0800487811 /* Channel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,11 +126,20 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		42699FC221885592002CB985 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				42699FBF2188555A002CB985 /* ProfileVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		4285E9F42186FE5200F38932 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				4285E9F52186FE7500F38932 /* AuthService.swift */,
 				4269D7402187641F00A17375 /* UserDataService.swift */,
+				4205558021883EB700487811 /* MessageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +178,7 @@
 		42F8D2BE2184F79200EB0EA6 /* YallaChat */ = {
 			isa = PBXGroup;
 			children = (
+				42699FC221885592002CB985 /* XIBs */,
 				4285E9F42186FE5200F38932 /* Services */,
 				4233EED32185A336001B509D /* Utilities */,
 				4233EECC21858C5C001B509D /* Model */,
@@ -235,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42F8D2CA2184F79400EB0EA6 /* LaunchScreen.storyboard in Resources */,
+				42699FC12188555A002CB985 /* ProfileVC.xib in Resources */,
 				42F8D2C72184F79400EB0EA6 /* Assets.xcassets in Resources */,
 				42F8D2C52184F79200EB0EA6 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +279,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YallaChat/Pods-YallaChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ALThreeCircleSpinner/ALThreeCircleSpinner.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
@@ -261,6 +289,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ALThreeCircleSpinner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
@@ -301,14 +330,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4233EED021858CBB001B509D /* ChannelVC.swift in Sources */,
+				4205558321883F0800487811 /* Channel.swift in Sources */,
 				4269D74321877FCA00A17375 /* AvatarPickerVC.swift in Sources */,
+				4269D7472187936E00A17375 /* CircularImage.swift in Sources */,
 				4269D73F2187523F00A17375 /* RoundedButton.swift in Sources */,
 				4233EECE21858C90001B509D /* ChatVC.swift in Sources */,
 				4269D7452187827800A17375 /* AvatarCollectionViewCell.swift in Sources */,
 				4269D7412187641F00A17375 /* UserDataService.swift in Sources */,
 				4233EED92185AD31001B509D /* CreateAccountVC.swift in Sources */,
+				42699FC02188555A002CB985 /* ProfileVC.swift in Sources */,
+				42699FC421885D8B002CB985 /* ProfileView.swift in Sources */,
 				4285E9F62186FE7500F38932 /* AuthService.swift in Sources */,
 				4233EED22185936E001B509D /* GradientView.swift in Sources */,
+				4205558121883EB700487811 /* MessageService.swift in Sources */,
 				42F8D2C02184F79200EB0EA6 /* AppDelegate.swift in Sources */,
 				42A4D1232184FECF008C33A7 /* SWRevealViewController.m in Sources */,
 				4233EED52185A358001B509D /* Constants.swift in Sources */,
