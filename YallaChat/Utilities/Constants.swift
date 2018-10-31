@@ -12,11 +12,13 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 
 //MARK: URL Constants
 let BASE_URL = "https://yallachatting.herokuapp.com/v1/"
+
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
-let URL_GET_CHANNELS = "\(BASE_URL)cnannel/"
+let URL_GET_CHANNELS = "\(BASE_URL)channel/"
+let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel/"
 
 // MARK: Segues
 let TO_LOGIN = "toLogin"
@@ -29,6 +31,8 @@ let PLACEHOLDER_PURPLE_COLOR = #colorLiteral(red: 0.1960784314, green: 0.3991414
 
 //Mark: Notification
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
+let NOTIF_CHANNELS_LOADED = Notification.Name("channelsLoaded")
+let NOTIF_CHANNEL_SELECTED = Notification.Name("channelSelected")
 
 //MARK: User Defaults
 let TOKEN_KEY = "token"

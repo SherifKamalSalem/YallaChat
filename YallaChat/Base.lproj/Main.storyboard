@@ -46,9 +46,6 @@
                                             <constraint firstAttribute="height" constant="18" id="98K-h1-3eo"/>
                                         </constraints>
                                         <state key="normal" image="smackBurger"/>
-                                        <connections>
-                                            <action selector="menuBtnPressed:" destination="DyP-24-kd4" eventType="touchUpInside" id="pWN-ck-tZE"/>
-                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2WQ-IA-h8y">
                                         <rect key="frame" x="138" y="47.5" width="99.5" height="25.5"/>
@@ -77,17 +74,107 @@
                                     <constraint firstAttribute="height" constant="77" id="pzX-q6-oxB"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0cl-hz-Yna">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="messageBoxEditing:" destination="DyP-24-kd4" eventType="editingChanged" id="MBo-O8-Ybt"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppI-Z5-IDW">
+                                <rect key="frame" x="337" y="637" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMsgPressed:" destination="DyP-24-kd4" eventType="touchUpInside" id="Src-YY-YzF"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DPY-yW-sIk">
+                                <rect key="frame" x="0.0" y="97" width="375" height="510"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="90" id="nwT-pO-JSB" customClass="MessageCell" customModule="YallaChat" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nwT-pO-JSB" id="a0Y-CT-d5h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m11-ED-eQf" customClass="CircularImage" customModule="YallaChat" customModuleProvider="target">
+                                                    <rect key="frame" x="15" y="11" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="hRQ-rz-7Ag"/>
+                                                        <constraint firstAttribute="width" constant="50" id="pDt-X4-xAy"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Sherif Kamal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANA-al-bhX">
+                                                    <rect key="frame" x="77" y="11" width="118" height="26"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="good evening" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F19-M4-iLw">
+                                                    <rect key="frame" x="77" y="45" width="271" height="26"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:33 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipR-2T-dlR">
+                                                    <rect key="frame" x="203" y="11" width="83" height="26"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ipR-2T-dlR" firstAttribute="centerY" secondItem="ANA-al-bhX" secondAttribute="centerY" id="2Qs-Wj-0HG"/>
+                                                <constraint firstItem="ipR-2T-dlR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ANA-al-bhX" secondAttribute="trailing" symbolic="YES" id="6Cz-XC-KJ3"/>
+                                                <constraint firstItem="m11-ED-eQf" firstAttribute="top" secondItem="a0Y-CT-d5h" secondAttribute="topMargin" id="HW9-h4-vGp"/>
+                                                <constraint firstAttribute="trailing" secondItem="ipR-2T-dlR" secondAttribute="trailing" constant="89" id="MK5-bS-NDv"/>
+                                                <constraint firstItem="ANA-al-bhX" firstAttribute="leading" secondItem="m11-ED-eQf" secondAttribute="trailing" constant="12" id="VST-Id-7T6"/>
+                                                <constraint firstItem="F19-M4-iLw" firstAttribute="leading" secondItem="m11-ED-eQf" secondAttribute="trailing" constant="12" id="Vag-6c-Z6P"/>
+                                                <constraint firstItem="ANA-al-bhX" firstAttribute="top" secondItem="m11-ED-eQf" secondAttribute="top" id="ful-1n-kw6"/>
+                                                <constraint firstItem="m11-ED-eQf" firstAttribute="leading" secondItem="a0Y-CT-d5h" secondAttribute="leadingMargin" id="gbB-qV-tiN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="F19-M4-iLw" secondAttribute="bottom" constant="8" id="i6i-ah-Pyb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="F19-M4-iLw" secondAttribute="trailing" constant="12" id="nCc-a6-dPj"/>
+                                                <constraint firstItem="F19-M4-iLw" firstAttribute="top" secondItem="ANA-al-bhX" secondAttribute="bottom" constant="8" id="xgM-PF-inc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageBodyLbl" destination="F19-M4-iLw" id="qWs-PT-XxZ"/>
+                                            <outlet property="timeStampLbl" destination="ipR-2T-dlR" id="2bz-P0-nOs"/>
+                                            <outlet property="userImg" destination="m11-ED-eQf" id="dk3-tr-iLa"/>
+                                            <outlet property="userNameTxt" destination="ANA-al-bhX" id="npd-F8-eqO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="DPY-yW-sIk" firstAttribute="leading" secondItem="Pjq-2y-k55" secondAttribute="leading" id="989-Yb-Ngv"/>
+                            <constraint firstItem="Pjq-2y-k55" firstAttribute="trailing" secondItem="ppI-Z5-IDW" secondAttribute="trailing" constant="8" id="CwO-y4-mJH"/>
+                            <constraint firstItem="0cl-hz-Yna" firstAttribute="top" secondItem="DPY-yW-sIk" secondAttribute="bottom" constant="30" id="HTg-5q-Kqx"/>
+                            <constraint firstItem="0cl-hz-Yna" firstAttribute="bottom" secondItem="Pjq-2y-k55" secondAttribute="bottom" id="MbF-dK-cF8"/>
+                            <constraint firstItem="ppI-Z5-IDW" firstAttribute="bottom" secondItem="Pjq-2y-k55" secondAttribute="bottom" id="Oa3-Cb-53j"/>
+                            <constraint firstItem="Pjq-2y-k55" firstAttribute="trailing" secondItem="0cl-hz-Yna" secondAttribute="trailing" id="VqK-Mz-N5J"/>
+                            <constraint firstItem="0cl-hz-Yna" firstAttribute="leading" secondItem="Pjq-2y-k55" secondAttribute="leading" id="bpL-Ct-6hp"/>
                             <constraint firstItem="RrY-9T-q6b" firstAttribute="leading" secondItem="Pjq-2y-k55" secondAttribute="leading" id="ckW-8T-lM8"/>
+                            <constraint firstItem="DPY-yW-sIk" firstAttribute="top" secondItem="RrY-9T-q6b" secondAttribute="bottom" id="g8C-5C-Y7D"/>
                             <constraint firstItem="RrY-9T-q6b" firstAttribute="top" secondItem="Pjq-2y-k55" secondAttribute="top" id="h99-3p-LRA"/>
+                            <constraint firstItem="DPY-yW-sIk" firstAttribute="trailing" secondItem="Pjq-2y-k55" secondAttribute="trailing" id="hdr-Lb-4yH"/>
+                            <constraint firstItem="ppI-Z5-IDW" firstAttribute="centerY" secondItem="0cl-hz-Yna" secondAttribute="centerY" id="nii-sO-z5l"/>
                             <constraint firstItem="RrY-9T-q6b" firstAttribute="trailing" secondItem="Pjq-2y-k55" secondAttribute="trailing" id="uMu-Ph-lIV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pjq-2y-k55"/>
                     </view>
                     <connections>
+                        <outlet property="channelNameLbl" destination="l59-gF-6Db" id="O7H-R0-yRs"/>
                         <outlet property="menuBtn" destination="vjY-0B-tMI" id="jsB-Or-wa9"/>
+                        <outlet property="messageTxt" destination="0cl-hz-Yna" id="rBI-jZ-aht"/>
+                        <outlet property="sendBtn" destination="ppI-Z5-IDW" id="d7N-an-EtJ"/>
+                        <outlet property="tableView" destination="DPY-yW-sIk" id="8Vu-GF-g4N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23P-Q6-0I0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,6 +210,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-lR-jnn">
                                                 <rect key="frame" x="273" y="0.0" width="22" height="22"/>
                                                 <state key="normal" image="addChannelButton"/>
+                                                <connections>
+                                                    <action selector="addChannelPressed:" destination="kbp-i8-5Tn" eventType="touchUpInside" id="xUQ-2f-pZE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -134,7 +224,7 @@
                                         </constraints>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yag-jB-s3h">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelCell" id="yag-jB-s3h" customClass="ChannelCell" customModule="YallaChat" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="295" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yag-jB-s3h" id="YSF-ZL-4bW">
@@ -154,6 +244,9 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="channelName" destination="3dI-Z6-DN8" id="P4I-0W-PVy"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -193,6 +286,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="L1W-Wb-Uot" id="5nS-00-0Qo"/>
+                        <outlet property="tableView" destination="Psa-kJ-9vZ" id="fLm-e1-rch"/>
                         <outlet property="userImg" destination="XgG-rw-wQz" id="Qs7-kL-sZh"/>
                     </connections>
                 </viewController>
@@ -618,6 +712,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
