@@ -39,15 +39,16 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         NotificationCenter.default.addObserver(self, selector: #selector(channelSelected(_:)), name: NOTIF_CHANNEL_SELECTED, object: nil)
         
-        SocketService.instance.getChatMessage { (success) in
-            if success {
+        SocketService.instance.getChatMessage { (newMessage) in
+            if newMessage.channelId == MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
+                MessageService.instance.messages.append(newMessage)
                 self.tableView.reloadData()
                 if MessageService.instance.messages.count > 0 {
                     let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
                     self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: true)
                 }
             }
-        }
+    }
         
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail(completion: {(success) in
